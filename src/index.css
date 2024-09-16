@@ -1,0 +1,150 @@
+/* Container for input and buttons */
+.text-input-container {
+    text-align: center;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    border: 1px solid #e0e0e0; /* Light border for subtle effect */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    background-color: #f9f9f9; /* Light background color */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Spacing between elements */
+}
+
+/* Input styling */
+.text-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px; /* Slightly rounded corners */
+    box-sizing: border-box; /* Ensures padding is included in width */
+    font-size: 16px; /* Larger font size for better readability */
+    outline: none; /* Remove default outline */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+.text-input:focus {
+    border-color: #007bff; /* Blue border on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Shadow effect on focus */
+}
+
+/* Button container styling */
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Button styling */
+.btn-submit, .btn-clear {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px; /* Larger font size for readability */
+    font-weight: bold; /* Make text bold */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+/* Submit button styling */
+.btn-submit {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Clear button styling */
+.btn-clear {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.btn-clear:hover {
+    background-color: #c82333; /* Darker red on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+
+/* Container for the list */
+.list-container {
+    margin-top: 20px;
+    max-width: 600px; /* Align with text input container */
+    margin: auto;
+}
+
+/* List styling */
+.todo-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Individual todo item styling */
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-radius: 6px; /* Rounded corners */
+    border: 1px solid #ddd;
+    background-color: #fff; /* White background for items */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    margin-bottom: 10px; /* Space between items */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+.todo-item:hover {
+    background-color: #f1f1f1; /* Light grey background on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Increased shadow on hover */
+}
+
+/* Text styling for todo item */
+.todo-text {
+    flex: 1;
+    font-size: 16px; /* Consistent font size */
+    font-weight: 500; /* Slightly bold text */
+    color: #333; /* Dark grey text */
+}
+
+/* Button container inside todo item */
+.todo-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Button styling inside todo item */
+.btn-delete, .btn-edit {
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #666; /* Subtle color */
+    font-size: 18px; /* Slightly larger icons */
+    transition: color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+/* Delete button styling */
+.btn-delete {
+    color: #dc3545; /* Red color for delete */
+}
+
+.btn-delete:hover {
+    color: #c82333; /* Darker red on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Edit button styling */
+.btn-edit {
+    color: #007bff; /* Blue color for edit */
+}
+
+.btn-edit:hover {
+    color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
